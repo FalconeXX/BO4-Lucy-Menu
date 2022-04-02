@@ -72,10 +72,7 @@ Visual Studio Code can be obtained [Here](https://code.visualstudio.com/)
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] Full Map Completion of EE's
-- [] Map Switch with character support
-- [] More Game Modes, Model changer, More features
-- [] Fix Menu Options Disappearing randomly.
+Development Cancelled. The community is full of Skids who literally edit something to claim credit, and I aint about that. I took over this menu partially to occupy myself, otherwise to add features to a menu that was basically shit. And for my time, I find an edit with literally zero creativity.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
