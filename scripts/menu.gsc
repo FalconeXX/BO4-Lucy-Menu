@@ -290,6 +290,16 @@ MenuOptionsPlayer(menu, player)
             self addOpt("Take All Weapons", &TakeWeapons);
             self addOpt("Take Current Weapon", &TakeCurrentWeapon);
         break;
+
+        //self addMenu(menu, "Map Selection");
+        //        self addOpt("IX" ---, &ChangeMap, "zm_towers");
+          //      self addOpt("Blood Of The Dead"---, &ChangeMap, "zm_escape");
+            //    self addOpt("Voyage of Despair" --, &ChangeMap, "zm_zodt8");
+             //   self addOpt("Dead of The Night", &ChangeMap, "zm_mansion");
+               // self addOpt("Ancient Evil"---, &ChangeMap, "zm_red");
+          //      self addOpt("Alpha Omega", &ChangeMap, "zm_white");
+          //      self addOpt("Classified", &ChangeMap, "zm_office");
+            //    self addOpt("Tag Der Toten", &ChangeMap, "zm_orange"); 
         case "Map Specific Weapons":
             self addMenu(menu, "Map Specific Weapons");
             if(BO4GetMap() == "Voyage"){
@@ -316,6 +326,12 @@ MenuOptionsPlayer(menu, player)
                 self addOpt("Hand of Hemera", &BO4GiveWeapon, "ww_hand_h_upgraded");
                 self addOpt("Hand of Gaia", &BO4GiveWeapon, "ww_hand_g_upgraded");
                 self addOpt("Hand of Charon", &BO4GiveWeapon, "ww_hand_c_upgraded");
+            }else if(BO4GetMap() == "Tag"){
+                self addOpt("Thundergun", &BO4GiveWeapon , "thundergun");
+                self addOpt("Wunderwaffe", &BO4GiveWeapon , "tesla_gun");
+            }
+            else if(BO4GetMap() == "Classified"){
+                self addOpt("Winter's Howl", &BO4GiveFreeze);
             }
         break;
         case "Pack a Punch Effects":
@@ -380,6 +396,7 @@ MenuOptionsPlayer(menu, player)
             self addOpt("^0 == Specials ==");
             self addOpt("Give Hellion Salvo", &BO4GiveWeapon, "launcher_standard_t8");
             self addOpt("Give Minigun", &BO4GiveWeapon, "minigun");
+            self addOpt("Ray-Gun MK2", &BO4GiveWeapon, "ray_gun_mk2"); 
         break; 
 
         case "Powerups Menu":
