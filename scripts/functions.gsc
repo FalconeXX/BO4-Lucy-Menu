@@ -56,6 +56,11 @@ BO4GiveSpoon()
     self giveWeapon(getWeapon(#"hash_52b03a79f854eed3"));
     self switchToWeapon(getWeapon(#"hash_52b03a79f854eed3"));
 }
+BO4GiveFreeze()
+{
+    self giveWeapon(getWeapon(#"hash_2605a6745df58840"));
+    self switchToWeapon(getWeapon(#"hash_2605a6745df58840"));
+}
 //freezegun? hash_2605a6745df58840
 
 //Spectral Shield hash_185abc5c82e9d849
